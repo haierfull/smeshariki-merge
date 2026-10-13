@@ -1,32 +1,32 @@
 plugins {
-    id("com.android.application")
+    id 'com.android.application'
 }
 
 android {
-    namespace = "ru.varya.smeshariki"
-    compileSdk = 34
+    namespace 'ru.varya.smeshariki'
+    compileSdk 34
 
     defaultConfig {
-        applicationId = "ru.varya.smeshariki"
-        minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        applicationId "ru.varya.smeshariki"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
-            signingConfig = signingConfigs.getByName("debug")
+            minifyEnabled false
+            signingConfig signingConfigs.debug
         }
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation 'androidx.appcompat:appcompat:1.7.0'
 }
