@@ -1,0 +1,16 @@
+{
+  "name": "Смешарики: Слияние",
+  "short_name": "Смешарики",
+  "description": "Игра-слияние в стиле Смешариков",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fff3d1",
+  "theme_color": "#e85d75",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
